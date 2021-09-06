@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website</title>
+        
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <meta charset="utf-8" />
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../grids.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="jquery.js"></script>
+        <script>
+            
+           // $(function () {
+             //   $("#button1").click(function () {
+               //     $("#topmenu ul").slideToggle();
+                 //   $("#cats").css("right", "-300px");
+                //});
+    
+                //$("#button2").click(function () {
+                  //  if ($("#cats").css("right") == "-300px") {
+                    //    $("#cats").css("right", "0");
+                      //  $("#topmenu ul").slideUp();
+                    //} else {
+                      //  $("#cats").css("right", "-300px");
+                    //}
+                //});
+    
+                //$("#cats .plus").click(function (event) {
+                  //  $(this).parent().siblings("ul").slideToggle();
+                    //event.preventDefault();
+                //});
+    
+                //$(window).resize(function () {
+                //    if ($("#cats").css("width") != "300px") {
+                //        $("#cats .submenu").slideUp();
+                //    }
+                //});
+            //});
+        </script>
+    </head>
+    <body>
+        <!-- This is a menu working with JS-->
+        <!-- 
+        <div id="topmenu">
+                <nav class="wrapper">
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">ورود</a></li>
+                        <li><a href="#">عضویت</a></li>
+                    </ul>
+                </nav>
+        </div>
+        <img src="../images/menu.png" alt="menu" id="button1">
+        <img src="../images/menu.png" alt="menu" id="button2">-->
+
+        <!-- This is a menu working with Bootstarp-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed" id="nav1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="topmenu">
+                    <ul class="navbar-nav wrapper">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">خانه</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">درباره ما</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تماس با ما</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ورود</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">عضویت</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed" id="nav2">
+                
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topmenu2" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="topmenu2">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">کالای دیجیتال</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item dropdown-submenu"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">موبایل</a>
+                                <ul class="navbar-nav dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">apple</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">LG</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">samsung</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">xiomi</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">تبلت</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">لپ تاپ</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">دوربین</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">لوازم خانگی</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">TV</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Blender</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Pot</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">زیبایی و سلامت</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Cream</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Eye Cream</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">SunBlock</a></li>
+                            <li class="nav-item dropdown-submenu"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">SunScream</a>
+                                <ul class="navbar-nav dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Oreal</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">Life</a>
+                                </ul>
+                            </li>
+                        </ul></li></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">فرهنگ و هنر</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Book</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Music</a></li>
+                            <li class="nav-item dropdown-submenu"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Podcast</a>
+                                <ul class="navbar-nav dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Rah</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#">ChannelB</a></li>
+                                </ul>
+                            </li>
+                        </ul> </li>
+                <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">ورزش و سرگرمی</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Socer</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Vallyball</a></li>
+                            <li class="nav-item dropdown-submenu"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">TvShows</a>
+                                <ul class="navbar-nav dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="#">Friends</a></li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">مادر و کودک</a>
+                        <ul class="navbar-nav dropdown-menu">
+                            <li class="nav-item"><a class="nav-link" href="#">Swiming</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            </nav>
+            <header id="header">
+        <div class="wrapper">
+                  <div class="row">
+                      <div id="logo" class="col-xs-12 col-sm-4">
+                        <img src="../images/logo.png" width="140" height="140">
+                     </div>
+               <div id="search" class="col-xs-12 col-sm-8">
+                 <h1>فروشگاه آنلاین</h1>
+                   <form>
+                     <input type="search" name="search" placeholder="کالای موردنظر خود را جستجو کنید">
+                     <input type="submit" value="جستجو">
+                    </form>
+                 </div>
+                  </div> 
+                </div>
+            </header>
+            <nav id="nav3">
+                <ul class="wrapper">
+                    <li class="item"> 
+                        <a href="#">کالای دیجیتال</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">موبایل</a>
+                                <ul class="submenu">
+                                    <li class="subitem"><a href="#">apple</a></li>
+                                    <li class="subitem"><a href="#">LG</a></li>
+                                    <li class="subitem"><a href="#">samsung</a></li>
+                                    <li class="subitem"><a href="#">xiomi</a></li>
+                                </ul>
+                            </li>
+                            <li class="subitem"><a href="#">تبلت</a></li>
+                            <li class="subitem"><a href="#">لپ تاپ</a></li>
+                            <li class="subitem"><a href="#">دوربین</a></li>
+                        </ul>
+                    </li>
+                     <li class="item">
+                        <a href="#">لوازم خانگی</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">TV</a></li>
+                            <li class="subitem"><a href="#">Blender</a></li>
+                            <li class="subitem"><a href="#">Pot</a></li>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <a href="#">زیبایی و سلامت</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">Cream</a></li>
+                            <li class="subitem"><a href="#">Eye Cream</a></li>
+                            <li class="subitem"><a href="#">SunBlock</a></li>
+                            <li class="subitem"><a href="#">SunScream</a>
+                                <ul class="submenu">
+                                    <li class="subitem"><a href="#">Oreal</a></li>
+                                    <li class="subitem"><a href="#">Life</a></ul>
+                            </li>
+                        </ul></li>
+                    <li class="item">
+                        <a href="#">فرهنگ و هنر</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">Book</a></li>
+                            <li class="subitem"><a href="#">Music</a></li>
+                            <li class="subitem"><a href="#">Podcast</a>
+                                <ul class="submenu">
+                                    <li class="subitem"><a href="#">Rah</a></li>
+                                    <li class="subitem"><a href="#">ChannelB</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                <li class="item"> 
+                        <a href="#">ورزش و سرگرمی</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">Socer</a></li>
+                            <li class="subitem"><a href="#">Vallyball</a></li>
+                            <li class="subitem"><a href="#">TvShows</a>
+                                <ul class="submenu">
+                                    <li class="subitem"><a href="#">Friends</a></li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                <li class="item">
+                        <a href="#">مادر و کودک</a>
+                        <ul class="submenu">
+                            <li class="subitem"><a href="#">Swiming</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <main class="wrapper">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-9" id="content">
+                            <section class="row group">
+                                <h2>پرفروش ها</h2>
+                               <div class="col-xs-12 col-sm-6 col-md-3">
+                                   <article>
+                                   <a href="#">
+                                     <div class="image">
+                                       <img src="../images/p1.jpg" alt="laptop">
+                                       <span class="imagelabel">پرفروش</span>
+                                    </div>
+                                       <h3>لپ تاپ 15 اینچی ایسوس مدل ROG GL502VS - B</h3>
+                                       <p class="rate">
+                                           <span><img src="../images/star.png" class="star">3.6</span>
+                                           <span>از 60 رای</span>
+                                       </p>
+                                       <p class="price">303333 تومان</p>
+                                   </a>
+                                   <a href="#" class="buy">افزودن به سبد خرید</a>
+                                   </article>
+                               </div>
+                               <div class="col-xs-12 col-sm-6 col-md-3">
+                                   <article>
+                                       <a href="#">
+                                           <div class="image">
+                                           <img src="../images/p21.jpg" alt="sunglasses">
+                                           <span class="imagelabel">پرفروش</span>
+                                           </div>
+                                           <h3>عینک آفتابی ری بن مدل 8352-6221-83</h3>
+                                           <p class="rate">
+                                               <span><img src="../images/star.png" class="star">3.6</span>
+                                               <span>از 60 رای</span>
+                                           </p>
+                                           <p class="price">303333 تومان</p>
+                                        </a>
+                                        <a href="#" class="buy">افزودن به سبد خرید</a>
+                                   </article>
+                               </div>
+                               <div class="col-xs-12 col-sm-6 col-md-3">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p2.jpg" />
+                                            <span class="imagelabel">پر فروش</span>
+                                        </div>
+                                        <h3>هاردديسک اينترنال وسترن ديجيتال سري آبي مدل WD10EZEX ظرفيت 1 ترابايت</h3>
+                                        <p class="rate">
+                                            <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                            <span>از 60 رای</span>
+                                        </p>
+                                        <p class="price">303333 تومان</p>
+                                    </a>
+                                    <a href="#" class="buy">افزودن به سبد خرید</a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p22.jpg" />
+                                            <span class="imagelabel">پر فروش</span>
+                                        </div>
+                                        <h3>عينک آفتابي کومونو سري Madison مدل Atlas</h3>
+                                        <p class="rate">
+                                            <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                            <span>از 60 رای</span>
+                                        </p>
+                                        <p class="price">303333 تومان</p>
+                                    </a>
+                                    <a href="#" class="buy">افزودن به سبد خرید</a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p18.jpg" />
+                                            <span class="imagelabel">پر فروش</span>
+                                        </div>
+                                        <h3>عينک آفتابي کومونو سري Alex مدل Black Green</h3>
+                                        <p class="rate">
+                                            <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                            <span>از 60 رای</span>
+                                        </p>
+                                        <p class="price">303333 تومان</p>
+                                    </a>
+                                    <a href="#" class="buy">افزودن به سبد خرید</a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p19.jpg" />
+                                            <span class="imagelabel">پر فروش</span>
+                                        </div>
+                                        <h3>عینک آفتابی گس مدل Clubmaster 7414-05B</h3>
+                                        <p class="rate">
+                                            <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                            <span>از 60 رای</span>
+                                        </p>
+                                        <p class="price">303333 تومان</p>
+                                    </a>
+                                    <a href="#" class="buy">افزودن به سبد خرید</a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p30.jpg" />
+                                            <span class="imagelabel">پر فروش</span>
+                                        </div>
+                                        <h3>گوشي موبايل هوآوي مدل P9 Plus VIE-L29 دو سيم کارت</h3>
+                                        <p class="rate">
+                                            <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                            <span>از 60 رای</span>
+                                        </p>
+                                        <p class="price">303333 تومان</p>
+                                    </a>
+                                    <a href="#" class="buy">افزودن به سبد خرید</a>
+                                </article>
+                            </div>
+                            </section>
+                            <section class="row group">
+                                    <h2>جدیدترین ها</h2>
+                     <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <article>
+                                            <a href="#">
+                                                <div class="image">  
+                                                <img src="../images/p24.jpg" alt="modem">
+                                                <span class="imagelabel">جدید</span>
+                                                </div>
+                                                <h3>مودم روتر ADSL2 Plus بي‌ سيم N300 دي-لينک مدل DSL-2740U</h3>
+                                                <p class="rate">
+                                                    <span class="star"><img src="../images/star.png" class="star">3.6</span>
+                                                    <span>از 60 رای</span>
+                                                </p>
+                                                <p class="price">303333 تومان</p>
+                                            </a>
+                                            <a class="buy" href="#">افزودن به سبد خرید</a>
+                                        </article>
+                     </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p17.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>هاردديسک اينترنال از نوع SAS سيگيت مدل ST9300653SS ظرفيت 300 گيگابايت</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p29.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>گوشي موبايل هوآوي آنر مدل 5X KIW-L21 دو سيم‌کارت</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p28.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>گوشي موبايل هوآوي مدل Nova Plus دو سيم‌ کارت</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p27.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>مودم روتر +ADSL2 لينک سيس مدل X1000-M2</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p26.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>مودم روتر +ADSL2 بي‌ سيم N300 تي پي-لينک مدل TD-W8960N</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p24.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>مودم روتر ADSL2 Plus بي‌ سيم N300 دي-لينک مدل DSL-2740U</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p23.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>Intel Haswell Core i7-4790K CPU</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p20.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>عینک آفتابی تیمبرلند مدل 9098-49H</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p3.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>لپ تاپ 15 اينچي ايسوس مدل Zenbook Pro UX501VW - B</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p5.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>لپ تاپ 15 اينچي ايسوس مدل K556UQ - H</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p4.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>لپ تاپ 15 اينچي ايسوس مدل X541UJ - A</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p6.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>لپ تاپ 15 اينچي ايسوس مدل X541UJ - I</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <article>
+                            <a href="#">
+                                <div class="image">
+                                    <img src="../images/p7.jpg" />
+                                    <span class="imagelabel">جدید</span>
+                                </div>
+                                <h3>لپ تاپ 15 اينچي ايسوس مدل ROG GL552VW - C</h3>
+                                <p class="rate">
+                                    <span><img src="../images/star.png" class="star" /> 3.6</span>
+                                    <span>از 60 رای</span>
+                                </p>
+                                <p class="price">303333 تومان</p>
+                            </a>
+                            <a href="#" class="buy">افزودن به سبد خرید</a>
+                        </article>
+                    </div>
+                </section>
+                        </div>
+                        <aside class="col-xs-12 col-lg-3" id="sidebar">
+                          <section class="row group">
+                              <h2>تخفیف ویژه</h2>
+                              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                  <article>
+                                      <a href="#">
+                                          <div class="image">
+                                              <img src="../images/p8.jpg">
+                                              <span class="imagelabel">تخفیف ویژه</span>
+                                              <span class="discount">15%</span>
+                                          </div>
+                                          <div class="popup">
+                                              <p class="comment">BarraCuda ST1000DM010 ظرفيت 1 ترابايت</p>
+                                              <p class="price">303333 تومان</p>
+                                        </div>
+                                          
+                                      </a>
+                                </article>
+                              </div>
+                              <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p9.jpg" />
+                                        <span class="imagelabel">تخفیف ویژه</span>
+                                        <span class="discount">15%</span>
+                                        <div class="popup">
+                                            <p class="comment">لپ تاپ ASUS ROG G752VS - C - 17 inch</p>
+                                            <p class="price">33333333 تومان</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p11.jpg" />
+                                        <span class="imagelabel">تخفیف ویژه</span>
+                                        <span class="discount">15%</span>
+                                        <div class="popup">
+                                            <p class="comment">لپ تاپ 14 اينچي ايسوس مدل ASUSPRO P2440UQ - A</p>
+                                            <p class="price">33333333 تومان</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p12.jpg" />
+                                        <span class="imagelabel">تخفیف ویژه</span>
+                                        <span class="discount">15%</span>
+                                        <div class="popup">
+                                            <p class="comment">لپ تاپ 15 اینچی ایسوس مدل N552VW - I</p>
+                                            <p class="price">33333333 تومان</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p10.jpg" />
+                                        <span class="imagelabel">تخفیف ویژه</span>
+                                        <span class="discount">15%</span>
+                                        <div class="popup">
+                                            <p class="comment">هاردديسک اينترنال سيگيت مدل BarraCuda ST1000DM010 ظرفيت 1 ترابايت</p>
+                                            <p class="price">33333333 تومان</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                          </section>
+                          <section class="row group">
+                              <h2>تبلیغات</h2>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <div class="image">
+                                            <img src="../images/p13.jpg">
+                                            <span class="imagelabel">تبلیغات</span>
+                                        </div>
+                                        <div class="popup">
+                                            <p class="comment">گوشي موبايل سامسونگ مدل Galaxy S8 دو سيم کارت به همراه بسته پيش خريد</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p14.jpg" />
+                                        <span class="imagelabel">تبلیغات</span>
+                                        <div class="popup">
+                                            <p class="comment">گوشي موبايل سامسونگ مدل Galaxy S8 Plus SM-G955FD دو سيم کارت به همراه بسته پيش‌ خريد</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12">
+                                <article>
+                                    <a href="#">
+                                        <img src="../images/p15.jpg" />
+                                        <span class="imagelabel">تبلیغات</span>
+                                        <div class="popup">
+                                            <p class="comment">گوشي موبايل سامسونگ مدل Galaxy J7 Prime SM-G610FD دو سيم کارت</p>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </section>
+                        </aside>
+                    </div>
+            </main>
+            <footer id="footer">
+                  <section class="row contact">
+                      <ul class="wrapper">
+                          <li>7 روز هفته و 24 ساعته پاسخگوی شما هستیم</li>
+                          <li id="mail">contact@domain.com<img src="../images/mail.png"></li>
+                          <li id="phone">021 - 44444444<img src="../images/phone.png"></li>
+                      </ul>
+                  </section>
+                  <section class="row detail">
+                      <div class="wrapper">
+                      <div class="col-xs-12 col-md-4">
+                    <h3 class="about">درباره فروشگاه</h3>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                        از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                        و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                    </p>
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                          <h3>اطلاعات</h3>
+                          <ul>
+                              <li><a href="#">درباره ما</a></li>
+                              <li><a href="#">حریم خصوصی</a></li>
+                              <li><a href="#">شرایط و قوانین</a></li>
+                          </ul> 
+                      </div>
+                      <div class="col-xs-6 col-md-2">
+                        <h3>خدمات مشتریان</h3>
+                        <ul>
+                            <li><a href="#">تماس ما</a></li>
+                            <li><a href="#">بازگشت</a></li>
+                            <li><a href="#">نقشه سایت</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <h3>امکانات جانبی</h3>
+                        <ul>
+                            <li><a href="#">کارت هدیه</a></li>
+                            <li><a href="#">کد تخفیف</a></li>
+                            <li><a href="#">بازاریابی</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-2">
+                        <h3>حساب من</h3>
+                        <ul>
+                            <li><a href="#">حساب کاربری</a></li>
+                            <li><a href="#">پیگیری سفارش</a></li>
+                            <li><a href="#">خبرنامه</a></li>
+                        </ul>
+                    </div>
+                </div>
+                  </section>
+                  <section class="row copywrite">
+                          <div class="col-xs-12 col-md-6">
+                            <p>کلیه حقوق مادی و معنوی این سایت متعلق به  <b>فروشگاه آنلاین</b> است.</p>
+                          </div>
+                          <ul class="col-xs-12 col-md-6">
+                             <li><a href="#"><img src="../images/facebook.png"></a></li>
+                             <li><a href="#"><img src="../images/instagram.png" /></a></li>
+                             <li><a href="#"><img src="../images/gplus.png" /></a></li>
+                             <li><a href="#"><img src="../images/twitter.png" /></a></li>
+                             <li><a href="#"><img src="../images/linkedin.png" /></a></li>
+                             <li><a href="#"><img src="../images/youtube.png" /></a></li>
+                             <li><a href="#"><img src="../images/rss.png" /></a></li>
+                          </ul>
+                  </section>
+            </footer>
+    </body>
+</html>
+
